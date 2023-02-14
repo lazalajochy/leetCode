@@ -1,26 +1,14 @@
-/*
-    https://leetcode.com/problems/palindrome-number/
+// //https://leetcode.com/problems/reverse-integer/
+var x = -2147483648;
+reverse(x);
 
-    1.entender el problema (analizar los datos de entradas y salidas proporcionados)
-    2.descomponer el problema en subproblemas
-    3.hacer una descripcion de como abordar los subproblemas
-    4.escribir el codigo que aborda cada subproblema
-    5.depurar el codigo
- 
- 
+function reverse(x) {
+  if (x === 0) return 0;
+  x = [...x.toString()];
+  let arr = [...x];
+  x = parseInt(x.reverse().join(""));
+  let bitLength = x.toString(2).length;
 
-    3.1 hacer una copia del entero dado y convertirlo en un arreglo
-    3.2 invertir el arreglo
-    3.3 almacenar en una variable el resultado del arreglo invertido
-    3.3 hacer la comparacion
-    
-    */
+  if (bitLength > 31) return 0;
 
-var x = 121;
-isPalindrome(x);
-
-function isPalindrome(x) {
-  var nString = x.toString();
-  var n = [...nString].reverse().join('');
-  return console.log((nString === n) ? true : false)
 }
