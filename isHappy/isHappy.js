@@ -10,7 +10,6 @@ function isHappy(n) {
 
   let index = 0;
   for (let i = 0; i < str.length; ) {
-    x = str[index];
     result += parseInt(str[index] * str[index]);
     index++;
 
