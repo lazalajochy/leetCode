@@ -6,7 +6,7 @@ maxProduct(nums);
 function maxProduct(nums) {
   let previousValue = 0,
     result = 0;
-  if (nums.length == 1) return console.log(nums[0]);
+  if (nums.length == 1) return nums[0];
   var max = Math.max(...nums);
   for (let i = 0; i < nums.length; i++) {
     previousValue = nums[i];
