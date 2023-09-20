@@ -21,7 +21,7 @@ function findLHS(nums) {
     }
   }
 
-  return console.log(result);
+  return result;
 }
 
 findLHS(nums);
